@@ -1,6 +1,6 @@
-# Projects from My Master's in Mathematics (2022–2024)
+# Projects from My Master's in Mathematics and Artificial Intelligence (2022–2024)
 
-Welcome to the repository showcasing the projects I undertook during my Master's studies at [Institut de Mathématiques d'Orsay (IMO)](https://www.math.u-psud.fr) - [Université Paris-Saclay](https://www.universite-paris-saclay.fr/). These projects span various topics, including pure and applied mathematics, computational methods, and interdisciplinary applications.
+Welcome to the repository showcasing the projects I undertook during my Master's studies at [Institut de Mathématiques d'Orsay (IMO)](https://www.math.u-psud.fr) - [Paris-Saclay University](https://www.universite-paris-saclay.fr/en). These projects span various topics, including pure and applied mathematics, computational methods, and interdisciplinary applications.
 
 ## 📚 Overview
 
