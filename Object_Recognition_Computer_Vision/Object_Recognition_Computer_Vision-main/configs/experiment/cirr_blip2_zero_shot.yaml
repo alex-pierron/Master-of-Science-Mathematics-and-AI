@@ -1,0 +1,12 @@
+# @package _global_
+
+defaults:
+  - override /data: cirr_blip2_zero_shot.yaml
+  - override /test: cirr_blip2_zero_shot.yaml
+
+model:
+  optimizer:
+    lr: 1e-5
+
+trainer:
+  max_epochs: 1

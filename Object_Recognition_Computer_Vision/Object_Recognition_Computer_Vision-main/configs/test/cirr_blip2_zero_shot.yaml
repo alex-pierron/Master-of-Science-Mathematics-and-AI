@@ -1,0 +1,15 @@
+cirr_blip2_zero_shot:
+  dataname: cirr_blip2_zero_shot
+  _target_: src.data.cirr_blip2_zero_shot.CIRRTestDataModule_blip2
+
+  test:
+    _target_: src.test.cirr_blip2_zero_shot.TestCirr_blip2
+
+  batch_size: ${machine.batch_size}
+  num_workers: ${machine.num_workers}
+
+  annotation: ${paths.work_dir}/annotation/cirr/cap.rc2.test1.json
+  img_dirs: ${paths.datasets_dir}/CIRR/images/test1
+  emb_dirs: ${paths.datasets_dir}/CIRR/blip-embs-pretrain/test1
+
+  image_size: 224

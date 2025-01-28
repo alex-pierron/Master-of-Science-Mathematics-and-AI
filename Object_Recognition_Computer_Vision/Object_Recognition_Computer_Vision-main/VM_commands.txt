@@ -1,0 +1,44 @@
+git clone https://github.com/lucas-ventura/CoVR.git
+
+# Debug (change via nano path):
+	- Change CoVR/configs/trainer/gpu.yaml to one device
+	- Change CoVR/src/data/cirr.py lines 166-167 to 
+		img_pths = self.img_dir.glob("*.png")
+            	emb_pths = self.emb_dir.glob("*.pth")
+	- Change CoVR/configs/machine/server.yaml batch size to 64
+	- Change CoVR/configs/trainer/default.yaml max epoch to 1
+
+
+pip install gdown
+gdown https://drive.google.com/uc?id=1QqHTJGu7KlyxQ-cgsZiipE2URHvhf2IA
+unzip images.zip
+mkdir CoVR/datasets CoVR/datasets/CIRR
+mv images CoVR/datasets/CIRR/
+wget https://lil.nlp.cornell.edu/resources/NLVR2/train_img.zip -P
+unzip train_img.zip
+rm -r CoVR/datasets/CIRR/images/train
+mv images CoVR/datasets/CIRR/images/train
+cd CoVR
+python -m pip install torch
+python -m pip install salesforce-lavis
+python -m pip install torchvision
+python -m pip install pytorch_lightning --upgrade
+python -m pip install hydra-core --upgrade
+python -m pip install lightning
+python -m pip install einops
+python -m pip install pandas
+python -m pip install opencv-python
+python -m pip install timm
+python -m pip install fairscale
+python -m pip install tabulate
+python -m pip install transformers
+bash tools/scripts/download_annotation.sh cirr
+cd datasets/CIRR/images/train
+find . -mindepth 2 -type f -name '*.png' -exec mv -t . {} + && find . -type d -empty -delete
+cd ../../../..
+python tools/embs/save_blip_embs_imgs.py --image_dir datasets/CIRR/images
+nano configs/trainer/gpu
+python train.py data=cirr trainer=gpu
+
+
+

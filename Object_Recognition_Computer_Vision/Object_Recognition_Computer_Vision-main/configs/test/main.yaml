@@ -1,0 +1,5 @@
+defaults:
+  - cirr.yaml
+  - webvid-covr.yaml
+  - cirr_blip2_zero_shot.yaml
+  - cirr_blip2.yaml

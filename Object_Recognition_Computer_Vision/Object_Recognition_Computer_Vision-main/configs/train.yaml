@@ -1,0 +1,33 @@
+hydra:
+  run:
+    dir: outputs/${data.dataname}/${model.modelname}/${experiment}/${run_name}
+  job: # automatically go to the job folder (needed for hydra > 1.2 with new behavior)
+    chdir: true
+
+# Global configurations shared between different modules
+experiment: tv-${model.model.train_vit}_loss-${model.model.loss.name}_vit${model.model.vit_model}_lr-${model.optimizer.lr}_pooling-${model.model.pooling}
+run_name: base
+
+seed: 1234
+logger_level: INFO
+
+# Composing nested config with default
+defaults:
+  - _self_
+  - data: cirr_blip2
+  - machine: server
+  - trainer: gpu
+  - test: all
+  - trainer/logger: csv
+  - model: blip2
+  - model/optimizer: adamw
+  - model/scheduler: cosine
+  - model/loss: hn_nce
+  #- model/ckpt: blip2_eva_clip_g
+
+  - experiment: cirr_blip2
+
+paths: ${machine.paths}
+
+# Flag to validate at the end of every epoch
+val: True
