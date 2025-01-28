@@ -25,7 +25,7 @@ This repository contains a collection of projects and coursework completed betwe
 ## 🛠️ Tools and Technologies
 
 - **Programming Languages**: Python, R, LaTeX  
-- **Software & Principles Libraries**: NumPy, Panda, SciPy,Scikit-learn, PyTorch, NetworkX
+- **Software & Principles Libraries**: NumPy, Panda, SciPy, Scikit-learn, PyTorch, NetworkX
 - **Mathematical Techniques**: Optimization, Statistical Modeling, Probability, Reinforcement Learning, Online Learning, Numerical Simulation.
 
 ---
