@@ -18,7 +18,7 @@ This repository contains a collection of projects and coursework completed betwe
 
 3. **[Supervised Learning]**  
    **Topic**: (Supervised Machine Learning)  
-   **Description**: This repository gathers our codes and results for the two challenges of the Master II course "Supervised Learning". These challenges were carried out in groups by Alex Pierron and Malkiel Riveline.
+   **Description**: This repository gathers our codes and results for the two challenges of the Master II course "Supervised Learning". These challenges were carried out in groups with Malkiel Riveline.
 
 ---
 
