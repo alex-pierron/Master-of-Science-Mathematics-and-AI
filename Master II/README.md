@@ -1,0 +1,1 @@
+This repository gathers all the major projects completed during my Master II "Mathematics and Artificial Intelligence" done at Paris-Saclay University.
