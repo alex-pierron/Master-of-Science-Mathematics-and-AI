@@ -71,5 +71,5 @@ Each folder contains:
 ## 📩 Contact
 
 For inquiries or collaboration opportunities, feel free to reach out:  
-📧 **[alex.pierron(at)ip-paris.fr]**  
-💼 [my personal website](https://alex-pierron.github.io/)
+📧 **alex.pierron(at)ip-paris.fr**  
+💼 my personal website: https://alex-pierron.github.io/
