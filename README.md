@@ -44,7 +44,7 @@ This repository contains a collection of projects and coursework completed betwe
     |- README.md         # Overview of Project 2
     |- ...
     ...
-
+```
 Each folder contains:
 - **A README** summarizing the project
 - **Code and Documentation** with detailed explanations
